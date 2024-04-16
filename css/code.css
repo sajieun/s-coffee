@@ -1,0 +1,426 @@
+		body {
+        	margin: 0;
+        }
+		ol,ul {list-style: none;}
+		.login {
+			font:16px Sunflower;
+			text-align: right;
+			margin-right: 80px;
+			width: 1437px;
+		}
+		.login a {
+			text-decoration: none;
+			color: #aeaeae;
+			margin: 0 10px;
+		}
+		.login a:hover{
+			color: #574749
+		}
+		.login a.cart{
+			position: relative;
+			top: 8px;
+		}
+		.logo {
+			margin: 0;
+			height: 60px;
+			position: relative;
+			text-align: center;
+			width: 1520px;
+		}
+
+		.menubar {
+			font: 25px Jua;
+		}
+		.menubar ul {
+			background: #f5e4d5;
+			height:60px;
+			list-style: none;
+			margin-right: 80px;
+			margin-left: 92px;
+			width: 1296px;
+		}
+		.menubar li{
+			float: left;
+			padding: 0;
+			width: 140px;
+		}
+		.menubar li a {
+			background:  #f5e4d5;
+			color:#574749; 
+			display: inline-block;
+			font-weight: normal;
+			line-height: 60px;
+			text-align: center;
+			margin: 0 20px;
+			padding: 0;
+			text-decoration: none;
+			width: 150px;
+			
+		}
+		.menubar li a:hover,
+		.menubar ul li:hover a {
+			background:#d9b89b;
+			color: #574749;
+			text-decoration: none;
+		}
+		.menubar li ul{ 
+			display: none; 
+			background:#d9b89b;
+			height: auto;
+			padding: 0;
+			margin: 0;
+			margin-left: 20px;
+			z-index: 200;
+			position: absolute;
+		}
+		.menubar li:hover ul{
+			display: block;
+			width: 100px;
+		}
+		.menubar li li {
+			background:#d9b89b;
+			display: block;
+			float: none;
+			padding: 0;
+			margin: 0;	
+		}
+		.menubar li:hover li a {
+			background: none;
+			text-align: center;
+		}
+		.menubar li ul a {
+			display: block;
+			height:50px;
+			font-size:15px;
+			font-style:normal;
+			margin: 0;
+		}
+		.menubar li ul a:hover,
+		.menubar li ul li:hover a{
+			background: #a5806e;
+			border: 0;
+			color: #fff;
+			text-decoration: none;
+			width: 140px;
+		}
+		.serch {
+			position: relative;
+			width: 400px;
+			height: 30px;
+			margin: 0px 810px;
+			text-align: right;
+			top: 13px;
+		}
+		.serch:hover{
+			-webkit-animation: blink 1s linear infinite; 
+		}
+		.serch .kambar{
+			position: relative;
+			bottom: 39px;
+			margin-right: 360px;
+
+		}
+		@keyframes blink{
+			0%{color:#574749;}
+			100%{color:#fff;}
+		}
+		section.sl{
+                position: relative;
+                line-height: 10px;
+                width: 1335px;
+                height: 450px;
+                margin: 0 92px;
+                box-shadow:1px 1px 3px rgba(0,0,0,0.1); 
+                overflow: hidden;
+
+            }
+            section ul.mask{
+                position: absolute;
+                width: 1340px;
+                height: 450px;
+                overflow: hidden;
+                margin: 0 auto;
+                z-index: 100px;
+            }
+            section ul.mask li{
+                position: absolute;
+                top: 0;
+                left: 300px;
+            }
+
+            section.sl label{
+                float: left;
+                position: relative;
+                left: 620px;
+                top: 430px;
+                width: 25px;
+                height: 10px;
+                margin-left: 5px;
+                background: #e5ddd8;
+                text-align: center;
+                cursor: pointer;
+                z-index: 1000;
+                border-radius: 70px/70px;
+            }
+            section.sl input.banner_input1:checked ~ label.label_btn1, 
+            section.sl input.banner_input2:checked ~ label.label_btn2, 
+            section.sl input.banner_input3:checked ~ label.label_btn3,
+            section.sl label:hover{
+                background: #6f6c6c;
+                color: white;
+                width: 40px;
+            } 
+            section.sl input{
+                display: none;
+            }
+            
+            section.sl input.banner_input1:checked ~ .mask li:nth-child(1), 
+            section.sl input.banner_input2:checked ~ .mask li:nth-child(2), 
+            section.sl input.banner_input3:checked ~ .mask li:nth-child(3){        
+                -webkit-animation: none;
+                transition: left 0.5s ease-in-out;
+                left: 0;
+                z-index: 10;
+            }
+            section.sl input.banner_input1:checked ~ .mask li{
+            	-webkit-animation: slideOut 0.5s ease-in-out;
+            }
+       		 @-webkit-keyframes slideOut{
+                0%{ left: 0; }
+                100%{ left:-400px;  }
+            }
+        .container {
+			position: relative;
+		}
+		nav {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 93px;
+			position: relative;
+			top: 10px;
+
+		}
+		.column {
+			display: inline-block;
+			vertical-align: top;
+			width: 100px;
+			margin: 10px 5px;
+		}
+		.container nav a {
+			width: 6px;
+			height: 200px;
+			float: left;
+		}
+		.container .column section{
+			position: relative;
+			width: 400px;
+			height: 400px;
+		}
+		.container nav .left{
+			position: relative;
+			width: 134px;
+			height: 0px;
+			background-color:#80615d;
+			border-left:  85px solid #fff;
+			border-bottom: 85px solid  transparent;
+			border-top: 85px solid transparent;
+			float: left;
+			margin-right: 5px;
+			top: 172px;
+		}
+		.container nav .center{
+			position: relative;
+			width: 0px;
+			height: 85px;
+			background-color:#997766;
+			border-bottom:  85px solid #fff;
+			border-left: 105px solid  transparent;
+			border-right: 105px solid transparent;
+			float: left;
+			margin-right: 5px;
+			top: 172px;
+		}
+		.container nav .right{
+			position: relative;
+			width: 134px;
+			height: 0px;
+			background-color:#d9b89b;
+			border-right:  85px solid #fff;
+			border-bottom: 85px solid  transparent;
+			border-top: 85px solid transparent;
+			float: left;
+			top: 172px;
+
+		}
+		.container .go{
+			position: relative;
+			bottom: 280px;
+			text-decoration: none;
+			font:35px Sunflower;
+			color: black;
+			margin-left: 30px;
+			
+		}
+		.soge{
+			width: 1340px;
+			margin: 0 90px;
+			text-align: center;
+			position: relative;
+			bottom: 60px;
+
+		}
+		.best{
+			font:45px Jua;
+			text-align: center;
+			position: relative;
+			margin: 30px 20px;
+			width: 1470px;
+			bottom: 70px;
+		}
+		.product{
+			position: relative;
+			margin: 0 100px;
+			bottom: 60px;
+			width: 400px;
+			text-align: center;
+			padding: 0 50px;
+			float: none;
+
+		}
+		.product ul{
+			height: 200px;
+		}
+		.product .product1{
+			width: 250px;
+			position: relative;
+			bottom: 30px;
+		}
+		.product .product2{
+			width: 250px;
+			position: relative;
+			margin-left: 300px;
+			bottom: 335px;
+		}
+		.product .product3{
+			width: 250px;
+			position: relative;	
+			text-align: center;
+			bottom: 655px;
+			margin-left: 600px;
+		}
+		.product .product4{
+			width: 250px;
+			position: relative;
+			bottom: 975px;
+			margin-left: 910px;
+		}
+ 		.product p{
+ 			font:20px Sunflower;
+ 			text-align: left;
+ 			margin: 5px 0;
+ 		}
+ 		.product .line{
+ 			border:1px solid black;
+ 			border-color: #aeaeae;
+ 			background: #aeaeae;
+ 		}
+ 		.product .price{
+ 			text-align: right;
+ 			font:18px Sunflower;
+ 			margin: 2px 0;
+ 		}
+ 		.product .sulmyung{
+ 			font:12px Sunflower;
+ 			text-align: left;
+ 		}
+ 		.last{
+ 			position: relative;
+ 			font:20px Sunflower;
+ 			text-align: right;
+ 			top: 20px;
+ 			height: 10px;
+
+ 		}
+ 		.line1{
+ 			border:1px solid black;
+ 			border-color: #aeaeae;
+ 			background: #aeaeae;
+ 			position: relative;
+ 			top: 50px;
+ 			margin: 0;
+ 			position:relative;
+ 		}
+ 		.last .name1{
+ 			position: relative;
+ 			font:27px Sunflower;
+ 			width: 500px;
+ 			text-align: left;
+ 			top: 60px;
+ 			margin-left: 250px;
+ 			height: 80px;
+
+ 		}
+ 		.last .name2{
+ 			position: relative;
+ 			font:27px Sunflower;
+ 			width: 900px;
+ 			text-align: left;
+ 			margin-left: 550px;
+ 			bottom: 20px;
+ 		}
+ 		.last .name3{
+ 			position: relative;
+ 			font:27px Sunflower;
+ 			width: 600px;
+ 			text-align: left;
+ 			margin-left: 850px;
+ 			bottom: 165px;
+ 		}
+ 		.last .sns1{
+ 			position: relative;
+ 			margin-left: 1200px;
+ 			bottom: 10px;
+
+ 		}
+ 		.last .sns2{
+ 			position: relative;
+ 			bottom: 10px;
+ 		}
+ 		.last p{
+ 			position: relative;
+ 			font:18px Sunflower medium;
+ 			height: 30px;
+ 			bottom: 20px;
+ 		}
+ 		.last .light{
+ 			position: relative;
+ 			font:14px Sunflower light;
+ 		}
+ 		.name2 .light{
+ 			position: relative;
+ 			bottom: 48px;
+ 		}
+ 		.last .line2{
+ 			position: relative;
+ 			bottom: 200px;
+ 			border:1px solid black;
+ 			border-color: #aeaeae;
+ 			background: #aeaeae;
+ 		}
+ 		.last .icon{
+ 			position: relative;
+ 			bottom: 300px;
+ 			width: 1300px;
+ 		}
+ 		.last .name3 .light{
+ 			position: relative;
+ 			bottom: 24px;
+ 			height: 15px;
+ 			margin: 0;
+ 		}
+ 		.last .name3 p{
+ 			position: relative;
+ 			height: 10px;
+ 			margin: 5;
+ 		}
+
